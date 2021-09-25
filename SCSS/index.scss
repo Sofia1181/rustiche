@@ -1,0 +1,22 @@
+/* IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+/* GLOBALS */
+@import "./Utils/globals";
+
+/*NORMALIZE */
+@import "./Utils/normalize";
+
+/* PARTIALS */
+@import "./partials/footer";
+@import "./partials/header";
+
+
+/* PAGES */
+@import "./pages/inicio";
+@import "./pages/contacto";
+@import "./pages/catalogo";
+@import "./pages/sobrerustiche";
+@import "./pages/telas&tintes";
+
+

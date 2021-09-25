@@ -1,0 +1,54 @@
+
+
+/* FOOTER */
+
+footer {
+    max-width: 100vw;
+    max-height: 20vh;
+    display: flex;
+    flex-flow: column wrap;
+    background-color: #262626;
+    align-items: center;
+    font-family: 'Poppins', sans-serif ;
+    padding: 4rem;
+    justify-content: center;
+    
+    }
+    
+    .nav-footer  {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 80%;
+        align-content: center;
+        align-items: center;
+        font-family:'Poppins', sans-serif ;
+
+        &__titulo {
+          color: whitesmoke;
+          font-stretch: semi-condensed;
+          font-size: 2em;
+
+        }
+        &__menu__lista {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        
+        &__li{
+        color: whitesmoke;
+        font-stretch: semi-condensed;
+        font-size: 1.6em;
+
+        }}
+        
+    }
+    
+    
+    .nav-footer .menu ul li a {
+        color: whitesmoke;
+        font-stretch: semi-condensed;
+        font-size: 1.6em;
+    }
+    
+    /* Fin estilo FOOTER */
