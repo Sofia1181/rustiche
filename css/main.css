@@ -1,49 +1,5 @@
 
 
-/* Rustiche index */
-#container-rus {
-    max-width: 100vw;
-    max-height: 80vh;
-    background-image: linear-gradient(#cde7a2, #295440, #262626 );
-    display: flex;  
-    flex-direction: row wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    font-size: 1.6em;
-    font-weight: lighter;
-}
-
-#container-rus .h3-index {
-    font-size: 2em;
-    font-weight: lighter;
-    color: #cde7a2;
-    font-stretch: semi-condensed;
-    font-family: 'Poppins', sans-serif ;
-}
-
-#container-rus .rustiche {
-    max-width: 50%;
-    display: flex;
-    flex-flow: column wrap;
-    gap: 2rem;
-    padding: 2rem;
-}
-
-#container-rus .div-rus { 
-    color: whitesmoke ;
-    font-size: 1.6em;
-    font-weight: lighter;
-    font-stretch: semi-condensed;   
-    font-family: 'Poppins', sans-serif;   
-}
-#container-rus .rus-img {
-    max-width: 20%;
-    max-height: 80%;
-    background: transparent; 
-}
-
-/* Fin Rustiche index */
 
 /* FOOTER */
 
@@ -92,10 +48,6 @@ justify-content: center;
 /* Fin estilo FOOTER */
 
                                 /* FIN ESTILO INDEX */
-
-/* CATALOGO */
-
-
 /* HEADER GRAL */
 header {
     background-color: #262626;
@@ -141,6 +93,7 @@ header .picture img {
 }
 
 /* FIN HEADER GRAL */
+
 /* PAG CATALOGO */
 .titulo-catalogo {
     text-align: center;
@@ -343,86 +296,7 @@ header .picture img {
 }
 /* fin contacto */
 
-/* TINTES & TELAS */
 
-.tyt {
-    width: 100vw;
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-around;
-    font-size: 1.6em;
-       
-}
-.tyt .tintes-1 {
-    width: 50vw;
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    color: #295440; 
-    padding: 2rem;
-      
-}
-.tyt .tintes-1 > h1 {
-    font-size: 2em;
-    font-weight: lighter;
-    font-stretch: semi-condensed;
-}
-.tyt .img-tyt {
-    width: 30vw;
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-.tyt .img-tyt img {
-    width: 80%;
-    height: 80%;
-}
-.telas-1 {
-    width: 100vw;
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-around;
-    font-size: 1.6em;
-}
-.telas-1 .tintes-1 {
-    width: 50vw;
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    color: #295440; 
-    padding: 2rem;
-}
-.telas-1 .tintes-1>h2 {
-    font-size: 2em;
-    font-weight: lighter;
-    font-stretch: semi-condensed;
-}
-.telas-1 .img-tyt2 {
-    width: 30vw;
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-.telas-1 .img-tyt2 img {
-    width: 50%;
-    height: 80%;
-}
 
 
 /* FIN TINTES & TELAS */

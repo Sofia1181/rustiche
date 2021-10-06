@@ -1,0 +1,107 @@
+/* PAG CATALOGO */
+.titulo-catalogo {
+    text-align: center;
+    width: 100vw;
+    padding: 2rem;
+    color: tomato;
+    font-weight: bold;
+    background-color: #295440;
+}
+
+.div-cat {
+    width: 80%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #cde7a2;
+    padding: 1rem ;
+    margin-top: 2rem;
+
+}
+#main-prod .div-cat .h2-cat {
+   padding: 2rem;
+   font-size: 2.5em;
+   color: tomato;
+   font-weight: bold;
+   font-stretch: semi-condensed;
+}
+
+#main-prod .div-cat > ul  {
+    max-width: 100%;
+    height: auto;
+    display: grid;
+    grid-column: 1 / 5;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 15rem;
+    gap: 2rem;   
+}
+#main-prod .div-cat > ul .cat {
+    font-size: 1.6em;
+    font-family: 'Poppins', sans-serif;
+    font-variant: small-caps;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;    
+}
+
+#main-prod .div-cat > ul .cat img {
+    width: auto;
+}
+
+#main-prod .div-cat > ul .cat li a {
+    color: tomato;
+    
+}
+.productos {
+    width: 100%;
+    margin: auto;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #262626;
+    padding: 1rem ;
+    margin-top: 2rem;
+    padding: 2rem;
+    justify-content: center;
+    font-size: 1.6em;
+    color: whitesmoke;
+    font-weight: lighter;
+
+}
+#main-prod .productos .h1-prod {
+    padding: 2rem;
+    font-size: 1.6em;
+    color: whitesmoke;
+    font-weight: lighter;
+    font-stretch: semi-condensed;
+ }
+
+ #main-prod .productos > ul  {
+    max-width: 100%;
+    min-height: 100%;
+    display: grid;
+    grid-column: 1 / 5;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 15rem 15 rem;
+    gap: 2rem; 
+    align-items: center;
+ }
+ #main-prod .productos > ul .prod {
+    font-size: 1.6em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    width: 100%;   
+     
+}
+
+#main-prod .productos > ul .prod img {
+    width: 50%;
+}

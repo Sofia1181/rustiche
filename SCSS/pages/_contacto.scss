@@ -1,0 +1,39 @@
+/* Contacto */
+
+#contacto {
+    width: 100%;   
+    height: auto;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+#contacto .div-ctc {
+    width: 40%;
+    float: left;
+    margin-left: 10rem;
+}
+#contacto .div-ctc .h1-ctc{
+    text-align: center;
+    font-size: 30px;
+    font-weight: lighter;
+    font-family: $poiret;
+}
+#contacto .div-ctc p {
+    color: #262626;
+    font-size: 1.6em;
+    margin-top: 2rem;
+}
+#contacto .ctc {
+    width: 40%;
+    max-height: 80%;
+    background-color: #295440;
+    display: inline-block;
+    
+}
+#contacto .ctc form {
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    padding: 2rem 0;
+    color: whitesmoke;
+    font-weight: lighter;
+}

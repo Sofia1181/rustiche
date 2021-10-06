@@ -1,0 +1,53 @@
+
+/* SOBRE RUSTICHE */
+.main-sr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #262626;
+}
+.rustiche-1 {
+    width: 80vw;
+    height: 80vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 2rem;
+      
+}
+
+.rustiche-1 .foto {
+    width: 30%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    background-image: url(../img/banner1.jpg);
+    border-radius: 2rem;
+    align-items: center;
+    
+}
+.rustiche-1 .foto img {
+    width: 50%;
+    max-height: 50%;
+    
+}
+.rustiche-1 .texto {
+    max-width: 60%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: whitesmoke;
+    font-size: 2em;
+    font-family: 'Poiret One', cursive;
+    
+}
+.rustiche-1 .texto h1 {
+    font-weight: lighter;
+    font-family: 'Poiret One', cursive;
+    
+}
+
+/* FIN RUSTICHE */

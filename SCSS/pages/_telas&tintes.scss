@@ -1,0 +1,81 @@
+/* TINTES & TELAS */
+
+.tyt {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.6em;
+       
+}
+.tyt .tintes-1 {
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    color: #295440; 
+    padding: 2rem;
+      
+}
+.tyt .tintes-1 > h1 {
+    font-size: 2em;
+    font-weight: lighter;
+    font-stretch: semi-condensed;
+}
+.tyt .img-tyt {
+    width: 30vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.tyt .img-tyt img {
+    width: 80%;
+    height: 80%;
+}
+.telas-1 {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.6em;
+}
+.telas-1 .tintes-1 {
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    color: #295440; 
+    padding: 2rem;
+}
+.telas-1 .tintes-1>h2 {
+    font-size: 2em;
+    font-weight: lighter;
+    font-stretch: semi-condensed;
+}
+.telas-1 .img-tyt2 {
+    width: 30vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.telas-1 .img-tyt2 img {
+    width: 50%;
+    height: 80%;
+}
+/* FIN TINTES & TELAS */

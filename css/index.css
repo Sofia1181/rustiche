@@ -2,8 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
 /* GLOBALS */
 ul {
-  list-style-type: none;
-  padding-left: 0; }
+  list-style-type: none; }
 
 a {
   text-decoration: none; }
@@ -119,7 +118,8 @@ header .nav {
   display: block; }
 
 /* PAGES */
-/*VARIABLES*/
+/*variables*/
+/*variables*/
 .body-index {
   background-image: url(../img/banner1.jpg);
   background-size: cover;
@@ -142,16 +142,16 @@ header .nav {
     display: flex;
     align-items: center; }
   .banner__titulo {
-    color: white;
+    color: #F2F2F2;
     flex-shrink: 2;
     font-size: 12em;
-    font-family: 'Poiret One', cursive;
+    font-family: "Poiret One", cursive;
     font-weight: bolder; }
   .banner__h2 {
-    color: white;
+    color: #F2F2F2;
     font-size: 4em;
     flex-shrink: 1;
-    font-family: 'Poiret One', cursive; }
+    font-family: "Poiret One", cursive; }
 
 .animacion {
   animation-name: colores;
@@ -184,11 +184,10 @@ header .nav {
   align-items: center;
   justify-content: space-around;
   color: whitesmoke;
-  flex-grow: 2;
   padding: 4rem; }
   .section-inf__h2 {
     font-size: 4em;
-    color: whitesmoke;
+    color: #F2F2F2;
     font-weight: lighter;
     font-stretch: semi-condensed; }
   .section-inf__p {
@@ -196,59 +195,346 @@ header .nav {
     color: #cde7a2;
     font-stretch: semi-condensed;
     font-weight: lighter; }
-  .section-inf .section-inf__div {
+  .section-inf div {
     display: flex;
     flex-flow: wrap column;
     justify-content: center;
     align-content: center;
     align-items: center;
     background-color: #295440;
-    filter: alpha(opacity=60);
-    -moz-opacity: .60;
-    opacity: .60;
-    border: solid #295440; }
-  .section-inf div {
     width: 20vw;
-    height: 25vh; }
+    height: 25vh;
+    filter: alpha(opacity=70);
+    -moz-opacity: .50;
+    opacity: .70; }
 
 /* Fin informacion */
 /* categorias */
 .section-cat {
   max-width: 100vw;
-  max-height: 50vh;
+  display: grid;
+  margin: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 30rem;
+  gap: 2rem; }
+  .section-cat__item--1 {
+    background-image: url(../img/pattern1.jpg);
+    background-size: cover;
+    background-position-y: center;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em; }
+  .section-cat__item--2 {
+    background-image: url(../img/pattern2.jpg);
+    background-size: cover;
+    background-position-y: center;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em; }
+  .section-cat__item--3 {
+    background-image: url(../img/pattern3.jpg);
+    background-size: cover;
+    background-position-y: center;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em; }
+  .section-cat__item a {
+    color: #F2F2F2;
+    margin: 2rem;
+    background: rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    opacity: 0.4;
+    padding: 2rem; }
+
+/* Rustiche index */
+.rustiche {
+  width: 80vw;
+  height: 100vh;
+  margin: 2rem auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
+  align-items: center;
+  background-image: url(../img/rustiche.jpg);
+  background-size: cover; }
+  .rustiche__texto {
+    width: 50%;
+    height: 80%;
+    font-family: "Poiret One", cursive;
+    color: #F2F2F2; }
+    .rustiche__texto--titulo {
+      font-size: 6em;
+      text-align: center; }
+    .rustiche__texto--p {
+      font-size: 4em;
+      text-align: center; }
+
+/* Fin Rustiche index */
+/* Contacto */
+#contacto {
+  width: 100%;
+  height: auto;
+  margin-bottom: 2rem;
+  margin-top: 2rem; }
+
+#contacto .div-ctc {
+  width: 40%;
+  float: left;
+  margin-left: 10rem; }
+
+#contacto .div-ctc .h1-ctc {
+  text-align: center;
+  font-size: 30px;
+  font-weight: lighter;
+  font-family: "Poiret One", cursive; }
+
+#contacto .div-ctc p {
+  color: #262626;
+  font-size: 1.6em;
+  margin-top: 2rem; }
+
+#contacto .ctc {
+  width: 40%;
+  max-height: 80%;
+  background-color: #295440;
+  display: inline-block; }
+
+#contacto .ctc form {
+  width: 100%;
+  text-align: center;
+  font-size: 2em;
+  padding: 2rem 0;
+  color: whitesmoke;
+  font-weight: lighter; }
+
+/* PAG CATALOGO */
+.titulo-catalogo {
+  text-align: center;
+  width: 100vw;
+  padding: 2rem;
+  color: tomato;
+  font-weight: bold;
+  background-color: #295440; }
+
+.div-cat {
+  width: 80%;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #cde7a2;
-  filter: alpha(opacity=50);
-  -moz-opacity: .50;
-  opacity: .50;
+  padding: 1rem;
+  margin-top: 2rem; }
+
+#main-prod .div-cat .h2-cat {
+  padding: 2rem;
+  font-size: 2.5em;
+  color: tomato;
+  font-weight: bold;
+  font-stretch: semi-condensed; }
+
+#main-prod .div-cat > ul {
+  max-width: 100%;
+  height: auto;
+  display: grid;
+  grid-column: 1 / 5;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 15rem;
+  gap: 2rem; }
+
+#main-prod .div-cat > ul .cat {
+  font-size: 1.6em;
+  font-family: 'Poppins', sans-serif;
+  font-variant: small-caps;
+  font-weight: bold;
+  text-align: center;
+  width: 100%; }
+
+#main-prod .div-cat > ul .cat img {
+  width: auto; }
+
+#main-prod .div-cat > ul .cat li a {
+  color: tomato; }
+
+.productos {
+  width: 100%;
+  margin: auto;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #262626;
+  padding: 1rem;
+  margin-top: 2rem;
+  padding: 2rem;
+  justify-content: center;
+  font-size: 1.6em;
+  color: whitesmoke;
+  font-weight: lighter; }
+
+#main-prod .productos .h1-prod {
+  padding: 2rem;
+  font-size: 1.6em;
+  color: whitesmoke;
+  font-weight: lighter;
+  font-stretch: semi-condensed; }
+
+#main-prod .productos > ul {
+  max-width: 100%;
+  min-height: 100%;
+  display: grid;
+  grid-column: 1 / 5;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 15rem 15 rem;
+  gap: 2rem;
   align-items: center; }
-  .section-cat__titulo {
-    max-width: 100vw;
-    text-align: center;
-    font-size: 3em;
-    color: #295440;
-    font-stretch: semi-condensed;
-    margin-top: 2rem;
-    font-weight: bolder;
-    font-family: 'Poppins', sans-serif; }
-  .section-cat__lista {
-    width: 80vw;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    margin-bottom: 2rem; }
-    .section-cat__lista__item {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      justify-content: center;
-      align-items: center;
-      width: 20%;
-      font-family: 'Poppins', sans-serif;
-      align-content: center; }
+
+#main-prod .productos > ul .prod {
+  font-size: 1.6em;
+  font-family: 'Poppins', sans-serif;
+  font-weight: lighter;
+  text-align: center;
+  width: 100%; }
+
+#main-prod .productos > ul .prod img {
+  width: 50%; }
+
+/* SOBRE RUSTICHE */
+.main-sr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #262626; }
+
+.rustiche-1 {
+  width: 80vw;
+  height: 80vh;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 2rem; }
+
+.rustiche-1 .foto {
+  width: 30%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  background-image: url(../img/banner1.jpg);
+  border-radius: 2rem;
+  align-items: center; }
+
+.rustiche-1 .foto img {
+  width: 50%;
+  max-height: 50%; }
+
+.rustiche-1 .texto {
+  max-width: 60%;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: whitesmoke;
+  font-size: 2em;
+  font-family: 'Poiret One', cursive; }
+
+.rustiche-1 .texto h1 {
+  font-weight: lighter;
+  font-family: 'Poiret One', cursive; }
+
+/* FIN RUSTICHE */
+/* TINTES & TELAS */
+.tyt {
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.6em; }
+
+.tyt .tintes-1 {
+  width: 50vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  color: #295440;
+  padding: 2rem; }
+
+.tyt .tintes-1 > h1 {
+  font-size: 2em;
+  font-weight: lighter;
+  font-stretch: semi-condensed; }
+
+.tyt .img-tyt {
+  width: 30vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.tyt .img-tyt img {
+  width: 80%;
+  height: 80%; }
+
+.telas-1 {
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.6em; }
+
+.telas-1 .tintes-1 {
+  width: 50vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  color: #295440;
+  padding: 2rem; }
+
+.telas-1 .tintes-1 > h2 {
+  font-size: 2em;
+  font-weight: lighter;
+  font-stretch: semi-condensed; }
+
+.telas-1 .img-tyt2 {
+  width: 30vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.telas-1 .img-tyt2 img {
+  width: 50%;
+  height: 80%; }
+
+/* FIN TINTES & TELAS */

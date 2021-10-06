@@ -1,16 +1,36 @@
-/*VARIABLES*/
-$img-principal: url(../img/banner1.jpg);
-$color: #295440;
 
- .body-index {
-    background-image: $img-principal;
+/*variables*/
+$dark: #262626;
+$verde: #295440;
+$verde-m: #8BD990;
+$poiret: 'Poiret One', cursive;
+$blanco: #F2F2F2;
+$sm: 2rem;
+$md: 4rem;
+$lg: 6rem;
+$xlg: 8rem;
+$widht-max: 100vw;
+$heigh-max: 100vh;
+$widht: 80vw;
+$heigh: 80vh;
+$fs-sm: 2em;
+$fs-md: 4em;
+$fs-lg: 6em;
+$fs-xlg: 8em;
+
+/*variables*/
+
+
+
+.body-index {
+    background-image: url(../img/banner1.jpg);
     background-size: cover;
     background-attachment: fixed;
         
 }
 .banner {
-    max-width: 100vw;
-    max-height: 80vh;
+    max-width: $widht-max;
+    max-height: $heigh;
     display: flex;
     flex-flow: wrap column;
     align-items: center;
@@ -26,17 +46,17 @@ $color: #295440;
         align-items: center;  
     }
     &__titulo {
-    color: white;
+    color:$blanco;
     flex-shrink: 2; 
     font-size: 12em;
-    font-family: 'Poiret One', cursive;
+    font-family: $poiret;
     font-weight: bolder;
     }
     &__h2 {
-    color: white;
+    color: $blanco;
     font-size: 4em;
     flex-shrink: 1; 
-    font-family: 'Poiret One', cursive;
+    font-family: $poiret;
     
     }
 }
@@ -81,12 +101,12 @@ animation-delay: 2s;
     align-items: center;
     justify-content: space-around;
     color: whitesmoke;
-    flex-grow: 2;
     padding: 4rem;
+    
 
     &__h2 {
         font-size: 4em;
-        color: whitesmoke;
+        color: $blanco;
         font-weight: lighter;
         font-stretch: semi-condensed;  
     }
@@ -96,22 +116,19 @@ animation-delay: 2s;
     font-stretch: semi-condensed;
     font-weight: lighter;
     }
-    .section-inf__div {
-        display: flex;    
-        flex-flow: wrap column;
-        justify-content: center;   
-        align-content: center;
-        align-items: center; 
-        background-color: #295440;
-        filter:alpha(opacity=60);
-        -moz-opacity:.60;opacity:.60;
-        border: solid #295440;
-        
-       }
+    
     @each $inf in div { 
            #{$inf} {
-               width: 20vw;
-               height: 25vh;
+            display: flex;    
+            flex-flow: wrap column;
+            justify-content: center;   
+            align-content: center;
+            align-items: center; 
+            background-color: $verde;
+            width: 20vw;
+            height: 25vh;
+            filter:alpha(opacity=70);
+        -moz-opacity:.50;opacity:.70;
               }
            }
         }
@@ -121,46 +138,74 @@ animation-delay: 2s;
 /* categorias */
 .section-cat {
     max-width: 100vw;
-    max-height: 50vh;
+    display: grid;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 30rem;
+    gap: 2rem;
+    
+   
+    &__item {
+        @for $i from 1 through 3 {
+            &--#{$i} {
+                background-image: url(../img/pattern#{$i}.jpg);
+                background-size: cover;
+                background-position-y: center;
+                width: 80%;
+                height: 80%;
+                margin: auto; 
+                display: flex;
+                justify-content: center;   
+                align-items: center; 
+                font-size: 3em;
+                }  
+            }
+     a {
+         color: $blanco;
+         margin: 2rem;
+         background: rgba(0, 0, 0, 0.5);
+        background-size: cover;
+        opacity: 0.4;
+        padding: 2rem;
+
+        
+
+     }
+    }
+}
+
+/* Rustiche index */
+.rustiche {
+    width: 80vw;
+    height: 100vh;
+    margin: 2rem auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    background-color: #cde7a2;
-    filter:alpha(opacity=50);
-        -moz-opacity:.50;opacity:.50;
     align-items: center;
-
-    &__titulo {
-        max-width: 100vw;
-        text-align: center;
-        font-size: 3em;
-        color: #295440;
-        font-stretch: semi-condensed;
-        margin-top: 2rem;  
-        font-weight: bolder;
-        font-family: 'Poppins', sans-serif; }
-
-    &__lista {
-        width: 80vw;
-        display: flex;
-        flex-wrap: wrap;
-        align-content: center; 
-        justify-content: center; 
-        align-items: center;
-        gap: 2rem;
-        margin-bottom: 2rem;
+    background-image: url(../img/rustiche.jpg);
+    background-size: cover;
+    &__texto {
+        width: 50%;
+        height: 80%;
+        font-family: $poiret;
+        color: $blanco;
         
-        &__item {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            justify-content: center;
-            align-items: center;
-            width: 20%;
-            font-family: 'Poppins', sans-serif;
-            align-content: center;
+        &--titulo {
+            font-size: 6em;
+            text-align: center;
         }
+        &--p {
+            font-size: 4em;
+            text-align: center;
+        }  
+        
     }
+    
+
 }
+
+
+/* Fin Rustiche index */
 
