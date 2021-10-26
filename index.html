@@ -1,63 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
-    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
-    <linkrel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <linkrel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://kit.fontawesome.com/c8a6c9b67a.js" crossorigin="anonymous"></script>
     <meta name="description" content="Utilizamos la tela como materia de nustros productos, la confeccionamos y reañozamos productos 100% artesanales">
     <meta name="keywords" content="telas, tintes naturales, manteles, producto artesanal, fibras naturales, decoracion">
+    
     <title>Rustiche</title>
 </head>
 <body class="body-index">
     <!---Inicio header-->
-    <header class="header-index">
-        <nav class="navbar navbar-expand-lg navbar-light navbar-dark">
-            <div class="container-fluid">
-              
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon "></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active text-white fs-3" aria-current="page" href="index.html">INICIO</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active text-white fs-3" aria-current="page" href="./pages/contacto.html">CONTACTO</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active text-white fs-3" aria-current="page" href="./pages/rustiche.html">SOBRE RUSTICHE</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active text-white fs-3" aria-current="page" href="./pages/tintes&telas.html">TINTES & TELAS</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active text-white fs-3" aria-current="page" href="./pages/catalogo.html">CATALOGO</a>
-                  </li>
-                  
-                  <li class="nav-item dropdown active text-white fs-3">
-                    <a class="nav-link text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Categorias</a>
-                      <ul class="dropdown-menu bg-transparent" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item text-white fs-3" href="#">Categoria1</a></li>
-                      <li><a class="dropdown-item text-white fs-3" href="#">Categoria2</a></li>
-                      <li><a class="dropdown-item text-white fs-3" href="#">Categoria3</a></li>
-                      <li><a class="dropdown-item text-white fs-3" href="#">Categoria4</a></li>
-                      
-                    </ul>
-                  </li>
-                  
-                </ul>
-              
-              </div>
-            </div>
-          </nav>
-        </header> 
+    <header>
+      <input type="checkbox" id="btn-menu">
+      <label for="btn-menu"><i class="fas fa-bars fa-5x"></i></label>
+      <nav class="menu">
+        <ul>
+          <li><a href="./pages/contacto.html">CONTACTO</a></li>
+          <li><a href="./pages/catalogo.html">CATALOGO</a></li>
+          <li><a href="./pages/rustiche.html">SOBRE RUSTICHE</a></li>
+          <li><a href="./pages/tintes&telas.html">TINTES & TELAS</a></li>
+        </ul>
+      </nav>
+      
+    </header> 
 <!---Fin Header-->
 <!--- Inicio Main -->
     <main class="container-fluid"> 
@@ -101,30 +71,22 @@
             <!--- Fin Seccion Categorias-->
              <!--- Inicio Seccion Rustiche-->
              <section class="rustiche">
-               <div class="rustiche__texto">
-                 <h2 class="rustiche__texto--titulo">RUSTICHE</h2>
-                 <P class="rustiche__texto--p">
-                En Rustiche nos interesa el tratamiento de las telas, en cuanto a su composicion y la posibilidad que nos da para obtener un resultado optimo en la tintura que obtenemos de la naturaleza.
+               <P>
+                 En Rustiche nos interesa el tratamiento de las telas, en cuanto a su composicion y la posibilidad que nos da para obtener un resultado optimo en la tintura que obtenemos de la naturaleza.
               </P>
-            </div>
-          </section>
-             
-           
-        </main> 
+            
+            </section>
+          </main> 
         <!--- Fin Main-->
 <!--Inicio Footer-->
-<footer> 
-    <div class="nav-footer">
-        <h4 class="nav-footer__titulo">Contactanos</h4>
-        <nav class="nav-footer__menu">
-            <ul class="nav-footer__menu__lista">
-                <li class="nav-footer__menu__lista__li"><a class="a-footer" href="contacto.html">Contacto</a></li> 
-                
-                <li class="nav-footer__menu__lista__li"><a class="a-footer" href="mail">mail</a></li>
-                <li class="nav-footer__menu__lista__li"><a class="a-footer" href="Whatsapp">Whatsapp</a></li>
-            </ul>
-        </nav>
+<footer>
+  <section class="seguinos">
+    <h3 class="t-seguinos">SEGUINOS</h3>
+    <div class="social">
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-instagram"></i>
     </div>
+  </section>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 <!-- Fin Footer-->

@@ -1,81 +1,90 @@
 /* TINTES & TELAS */
 
 .tyt {
-    width: 100vw;
-    height: 50vh;
+    width: 80vw;
+    height: 80vh;
     display: flex;
+    flex-wrap: wrap row;
     justify-content: center;
     align-items: center;
-    justify-content: space-around;
-    font-size: 1.6em;
+    align-content: center;
+    margin: $sm auto;
+
+    &__texto {
+        width: 50%;
+        height: 100%;
+        font-family: $poppins;
+        background-color: $dark;
+        color: $blanco;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        
+        &__titulo-tintes {
+            font-size: $fs-sm;
+            width: 100%;
+            font-weight: bold; 
+
+        }    
+        &__p-tintes {
+            padding: 0 $sm;
+            font-size: 1.5em;
+        }
+    }
+    &__img1 {
+        width: 50%;
+        height: 100%;
+        background-image: url(../img/tintes.jpg);
+        background-size: cover;
+        margin: $sm;
+        &__imagen {
+            width: 100%;
+            height: 100%;
+        }
+
+    }
+    &__img2 {
+        width: 50%;
+        height: 100%;
+        background-image: url(../img/TELAS.jpg);
+        background-size: cover;
+        margin: $sm;
+        &__imagen {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    
        
 }
-.tyt .tintes-1 {
-    width: 50vw;
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    color: #295440; 
-    padding: 2rem;
-      
-}
-.tyt .tintes-1 > h1 {
-    font-size: 2em;
-    font-weight: lighter;
-    font-stretch: semi-condensed;
-}
-.tyt .img-tyt {
-    width: 30vw;
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-}
-.tyt .img-tyt img {
-    width: 80%;
-    height: 80%;
-}
-.telas-1 {
-    width: 100vw;
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-around;
-    font-size: 1.6em;
-}
-.telas-1 .tintes-1 {
-    width: 50vw;
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    color: #295440; 
-    padding: 2rem;
-}
-.telas-1 .tintes-1>h2 {
-    font-size: 2em;
-    font-weight: lighter;
-    font-stretch: semi-condensed;
-}
-.telas-1 .img-tyt2 {
-    width: 30vw;
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-.telas-1 .img-tyt2 img {
-    width: 50%;
-    height: 80%;
-}
 /* FIN TINTES & TELAS */
+/*RESPONSIVE*/
+@media screen and (max-width: 992px) {
+    .tyt  {
+        &__texto {
+    &__p-tintes {
+        font-size: 1em;
+    }
+}
+
+}   
+}
+@media screen and (max-width: 576px) {
+   .tyt {
+       display: flex;
+       flex-direction: column;
+       width: 100vw;
+       height: 100vh;
+       &__img1 {
+        width: 50%;
+        height: 100%;
+    }
+    &__img2 {
+        width: 50%;
+        height: 100%;
+    }
+   }
+}

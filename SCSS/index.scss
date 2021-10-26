@@ -2,14 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
 
 /* GLOBALS */
-@import "./Utils/globals";
+@import "./utils/globals";
 
 /*NORMALIZE */
-@import "./Utils/normalize";
+@import "./utils/normalize";
+
+/*VARIABLES*/
+
+@import "./utils/variables";
 
 /* PARTIALS */
 @import "./partials/footer";
 @import "./partials/header";
+@import "./partials/headergral";
 
 
 /* PAGES */
@@ -19,4 +24,110 @@
 @import "./pages/sobrerustiche";
 @import "./pages/telas&tintes";
 
+
+/* FIN TINTES & TELAS */
+
+/* RESPONSIVE */
+@media screen and (max-width: 780px) {
+    #container-banner {
+       
+        max-height: 50vh;
+    }
+    #container-banner .banner .h1-banner {
+        font-size: 8em;
+        }
+    #container-banner .banner .h2-banner {
+        font-size: 4em;
+    }
+    }
+   
+    @media screen and (max-width: 480px) {
+        #container-banner {
+           max-height: 25vh;
+        }
+        #container-banner .banner .h1-banner {
+            font-size: 6em;
+            }
+        #container-banner .banner .h2-banner {
+            font-size: 1em;
+        }
+        }
+
+@media screen and (max-width: 780px) {
+    #container-inf {
+        max-height: 30vh;
+        padding: 4rem 0;
+    }
+    #container-inf .telas {
+        max-width: 25vw;
+        max-height: 20vh;
+        
+
+    }
+ #container-inf .tintes {
+        width: 25vw;
+        height: 20vh;
+        
+        
+    }
+    #container-inf .estampa {
+        max-width: 25vw;
+        max-height: 20vh;
+        
+        
+    }
+    #container-inf .h2-inf {
+        font-size: 2em;
+    }
+    #container-inf .p-inf {
+        font-size: 1.5em;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 480px) {
+    #container-inf .h2-inf {
+        
+        font-size: 1.5em;
+        
+    }
+    #container-inf .p-inf {
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 480px) {
+    #cat-index {
+        max-width: 100%;
+        max-height: 100%;
+        
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    #cat-index .prod-cat {
+        display: flex;
+        flex-flow: column wrap;
+        width: 100%;
+        align-content: center;
+    }
+}
+@media screen and (max-width: 480px) {
+    #cat-index .cat-titulo {
+        font-size: 2em;
+       
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #cat-index .prod-cat>li {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 25%;
+        font-family: 'Poppins', sans-serif;
+    }
+}
 

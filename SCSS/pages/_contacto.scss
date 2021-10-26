@@ -1,39 +1,40 @@
 /* Contacto */
 
-#contacto {
-    width: 100%;   
+form {
+    width: 80%;
     height: auto;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+    margin: $sm auto;
+    background: rgba(0, 0, 0, 0.4);
+    padding: $sm;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    border-radius: 5px;
+    gap: $sm;
+    align-items: center;
+    color: $blanco;
+    font-size: $fs-sm;
 }
-#contacto .div-ctc {
-    width: 40%;
-    float: left;
-    margin-left: 10rem;
-}
-#contacto .div-ctc .h1-ctc{
+form .titulo-ctc {
+    color: $blanco;
     text-align: center;
-    font-size: 30px;
-    font-weight: lighter;
-    font-family: $poiret;
+    font-family: $poppins;
+    font-weight: bold;
 }
-#contacto .div-ctc p {
-    color: #262626;
-    font-size: 1.6em;
-    margin-top: 2rem;
+
+input {
+    width: 80%;
+    padding: $sm;
 }
-#contacto .ctc {
-    width: 40%;
-    max-height: 80%;
-    background-color: #295440;
-    display: inline-block;
-    
+textarea {
+    width: 80%;
+    padding: $sm;
+    min-height: 100px;
+    max-height: 200px;
 }
-#contacto .ctc form {
-    width: 100%;
-    text-align: center;
-    font-size: 2em;
-    padding: 2rem 0;
-    color: whitesmoke;
-    font-weight: lighter;
+#boton {
+    width: 30%;
+    background-color: $verde;
+    color: $blanco;
 }

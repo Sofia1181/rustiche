@@ -1,53 +1,50 @@
 
 /* SOBRE RUSTICHE */
-.main-sr {
+
+.rus-inf {
+    width: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: #262626;
-}
-.rustiche-1 {
-    width: 80vw;
-    height: 80vh;
-    display: flex;
-    flex-flow: row wrap;
     justify-content: center;
     align-content: center;
-    gap: 2rem;
-      
+    gap: $sm;
+    background-color: $dark;
+    margin: auto;
+    align-items: center;
+    &__foto {
+        width: 80%;
+        height: 50%;
+        background-image: url(../img/rustiche.jpg);
+        background-size: cover;
+        background-position: left;
+        background-position-y: center;
+        background-attachment: fixed;
+    }
+    &__texto {
+        width: 50%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: $blanco;
+        font-family: $poiret;
+        
+        &__h1-rus {
+            width: 100vw;
+            font-size: $fs-md;
+            text-align: center;
+            
+        }
+        &__p-rus {
+            text-align: center;
+            font-size: $sm;
+
+        }
+    
 }
 
-.rustiche-1 .foto {
-    width: 30%;
-    height: 50%;
-    display: flex;
-    justify-content: center;
-    padding: 2rem;
-    background-image: url(../img/banner1.jpg);
-    border-radius: 2rem;
-    align-items: center;
-    
-}
-.rustiche-1 .foto img {
-    width: 50%;
-    max-height: 50%;
-    
-}
-.rustiche-1 .texto {
-    max-width: 60%;
-    max-height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: whitesmoke;
-    font-size: 2em;
-    font-family: 'Poiret One', cursive;
-    
-}
-.rustiche-1 .texto h1 {
-    font-weight: lighter;
-    font-family: 'Poiret One', cursive;
-    
 }
 
 /* FIN RUSTICHE */

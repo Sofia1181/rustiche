@@ -4,16 +4,19 @@ ul {
     
 }
 
-a {
+li a {
     text-decoration: none;
     
 }
 
+
 body {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;       
+        
 }
 main {
     width: 100vw;
+    height: auto;
+
 }

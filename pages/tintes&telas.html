@@ -4,63 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/c8a6c9b67a.js" crossorigin="anonymous"></script>
     <meta name="description" content="Utilizamos fibras naturales y ciertos productos estan realizados con telas teñidas con tintes naturales">
     <meta name="keywords" content="Tintes naturales, telas, fibras naturales, rustiche">
     <title>TINTES & TELAS</title>
 </head>
 <body>
 <!---Inicio header-->
-<header> 
-    <div class="picture">
-        <picture>
-            <img src="../img/SVG/Logo.svg" alt="">
-        </picture>
+<header class="header-pages"> 
+    <div class="header-pages__picture">
+        <img class="header-pages__picture__img" src="../img/SVG/Logo.svg" alt="Imagen de Logo Rustiche">
     </div>
-    <nav class="nav">
-        <ul class="menu">
-            <li><a  href="../index.html">INICIO</a></li>
-            <li><a  href="../pages/contacto.html">CONTACTO</a></li>
-            <li><a  href="../pages/catalogo.html">CATALOGO</a>
-            <li><a  href="../pages/rustiche.html">SOBRE RUSTICHE</a></li>
+    <input type="checkbox" id="btn-menu">
+      <label for="btn-menu"><i class="fas fa-bars fa-5x"></i></label>
+    <nav class="header-pages__nav">
+        <ul class="header-pages__nav__menu">
+            <li class="header-pages__nav__menu__li"><a  href="../index.html">INICIO</a></li>
+            <li class="header-pages__nav__menu__li"><a  href="../pages/contacto.html">CONTACTO</a></li>
+            <li class="header-pages__nav__menu__li"><a  href="../pages/catalogo.html">CATALOGO</a></li>
+            <li class="header-pages__nav__menu__li"><a  href="../pages/rustiche.html">SOBRE RUSTICHE</a></li>
+            
         </ul>
     </nav>
-</header> 
+</header>
 <!---Fin Header--> 
 <!---Inicio main-->       
-<main>
+<main class="container-fluid">
     <section class="tyt">
-        <div class="tintes-1">
-            <h1>Tintes Naturales</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe fugit architecto voluptatem minus nostrum ratione, facilis consequatur repellendus accusantium quas ex dolorum maiores iure molestiae. Eum commodi aperiam dicta voluptate!</p>
+        <div class="tyt__texto">
+            <h1 class="tyt__texto__titulo-tintes">Tintes Naturales</h1>
+            <p class="tyt__texto__p-tintes">A manera de regla, los tintes naturales se extraen de plantas al pulverizarlas, desmenuzarlas o cortarlas. Las partes de la planta luego son colocadas en agua calentada a una temperatura justo por debajo del punto de ebullición hasta que el color se haya transferido al agua. Cuando el color es añadido a un material saturado en mordiente, el tinte se adhiere entonces a la fibra del material. Los mordientes ayudan a que los colores se adhieran permanentemente en las fibras.
+
+                Ya que muchos mordientes son muy tóxicos, se recomienda que se utilice sulfato de amonio de aluminio con los estudiantes. Esta forma de alumbre es comúnmente utilizada como un agente curtimbre. Los nativo-americanos utilizan un gran número de mordientes que se dan en la naturaleza los cuales incluyen : alumbre natural el cual se precipita sobre algunos suelos que se secan, ácidos tánicos de zumaque (bayas, ramas u hojas), lejía hecha de cenizas de madera, orina, una mezcla de excrementos de oveja con agua y humo.</p>
         </div>
-        <div class="img-tyt"><img src="../img/tintes naturales.jpeg" alt="Imagen ilustrativa de telas teñidas con tinte natural"></div>
+        <div class="tyt__img1">
+            <img class="tyt__img__imagen" src="" alt="">
+        </div>
     </section>
-    <section class="telas-1">
-        <div class="tintes-1">
-            <h2>Telas</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi fugiat eligendi reiciendis quod consectetur dicta, ducimus nam suscipit maiores ullam exercitationem. Libero sunt necessitatibus dicta vel repellendus nulla quos architecto </p>
+    <section class="tyt">
+        <div class="tyt__texto">
+            <h2 class="tyt__texto__titulo-tintes">Telas</h2>
+            <p class="tyt__texto__p-tintes">El algodón es la fibra natural más importante que se produce en el mundo, su importancia empezó en el siglo XIX con el proceso de industrialización y hoy en día todavía representa casi la mitad del consumo mundial de fibras textiles. No todas las especies del género Gossypium tienen valor comercial, las fibras se obtienen de la semilla de unas pocas especies, la longitud y el grueso de la fibra dependen de su procedencia.
+                En Rustiche nos interesa trabajar con este tipo de fibras, ya que nos proprciona un optimo resultado ya sea para la estampa artesanal como el teñido natural, ya que su color en crudo va del blanco al natural y su composicion es apta para la fijacion de los colores.
+            </p>
         </div>
-        <div class="img-tyt2"><img src="../img/TELAS.JPG" alt="Imagen de telas sin confeccionar"></div>
+        <div class="tyt__img2">
+            <img class="tyt__img__imagen" src="" alt="">
+        </div>
     </section>
         </main> <!---Fin mail-->
        <hr>
    <!--Inicio Footer-->
-<footer> 
-    <div class="nav-footer">
-        <h4>Contactanos</h4>
-        <nav class="menu">
-            <ul>
-                <li><a class="a-footer" href="contacto.html">Contacto</a></li> 
-                <li><a class="a-footer" href="https://www.instagram.com/">Instagram</a></li>
-                <li><a class="a-footer" href="mail">mail</a></li>
-                <li><a class="a-footer" href="Whatsapp">Whatsapp</a></li>
-            </ul>
-        </nav>
-    </div>
-</footer>
+   <footer>
+       <section class="seguinos">
+           <h3 class="t-seguinos">SEGUINOS</h3>
+           <div class="social">
+               <i class="fab fa-facebook"></i>
+               <i class="fab fa-instagram"></i>
+            </div>
+        </section>
+    </footer>
 <!-- Fin Footer-->
 </body>
 </html>

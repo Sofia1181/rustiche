@@ -1,113 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/c8a6c9b67a.js" crossorigin="anonymous"></script>
     <meta name="description" content="Productos de Rustiche">
     <meta name="keywords" content="Productos, Categorias">
     <title>CATALOGO</title>
 </head>
 <body>
 <!---Inicio header-->
-<header> 
-    <div class="picture">
-        <picture>
-            <img src="../img/SVG/Logo.svg" alt="Imagen de Logo Rustiche">
-        </picture>
+<header class="header-pages"> 
+    <div class= "header-pages__picture">
+        <img class="header-pages__picture__img" src="../img/SVG/Logo.svg" alt="Imagen de Logo Rustiche">
     </div>
-    <nav class="nav">
-        <ul class="menu">
-            <li><a  href="../index.html">INICIO</a></li>
-            <li><a  href="../pages/contacto.html">CONTACTO</a></li>
-            <li><a  href="../pages/rustiche.html">SOBRE RUSTICHE</a></li>
-            <li><a  href="../pages/tintes&telas.html">TINTES & TELAS</a></li>
+    <input type="checkbox" id="btn-menu">
+      <label for="btn-menu"><i class="fas fa-bars fa-5x"></i></label>
+    <nav class="header-pages__nav">
+        <ul class="header-pages__nav__menu">
+            <li class="header-pages__nav__menu__li"><a  href="../index.html">INICIO</a></li>
+            <li class="header-pages__nav__menu__li"><a  href="../pages/contacto.html">CONTACTO</a></li>
+            <li class="header-pages__nav__menu__li"><a  href="../pages/rustiche.html">SOBRE RUSTICHE</a></li>
+            <li class="header-pages__nav__menu__li"><a  href="../pages/tintes&telas.html">TINTES & TELAS</a></li>
         </ul>
     </nav>
-</header> 
+</header>
 <!---Fin Header-->
        <!--- Inicio Seccion Categorias-->
-       <main id="main-prod">
-           <h1 class="titulo-catalogo">Nuestros Productos</h1>
-           <section class="div-cat">
-               <h2 class="h2-cat">CATEGORIAS</h2>
-               <ul>
-                   <div class="cat">
-                       <img src="../img/SVG/Hoja-BG-VO.svg" alt="imagen Categoria 1">
-                       <li><a href="1">Manteles</a></li>
-                    </div>
-                    <div class="cat">
-                        <img src="../img/SVG/Hoja-BG-VO.svg" alt="Imagen Categoria 2">
-                        <li><a href="2">Almohadones</a></li>
-                    </div>
-                    <div class="cat">
-                        <img src="../img/SVG/Hoja-BG-VO.svg" alt="Imagen Categoria 3">
-                        <li><a href="3">Mantas</a></li>
-                    </div>
-                        <div class="cat">
-                            <img src="../img/SVG/Hoja-BG-VO.svg" alt="Imagen Categoria 4">
-                            <li><a href="4">Materos</a></li>
-                        </div>
-                    </ul>
+       <main>
+           <h1 class="h1-p">CATÁLOGO</h1>
+           <section class="cat">
+                <div class="cat__img">
+                    <a href="">Manteles</a>
+                 </div>
+                 <div class="cat__img">
+                    <a href="">Caminos</a>
+                 </div>
+                 <div class="cat__img">
+                    <a href="">Materos</a>
+                 </div>
                 </section>
                 <section class="productos">
-                    <h1 class="h1-prod">CATALOGO</h1>
-                    <ul>
-                        <div class="prod">
-                            <li>P1</li>
-                            <img src="../img/SVG/Producto 1.svg" alt="Imagen ilustrativa de producto 1">
+                    <div class="card" style="width: 100%;">
+                        <img src="../img/catalogo1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">Mantel confeccionado con tela tusor y puntilla de algodon teñida con tinte natural proveniente del te y del cafe.</p>
                         </div>
-                        <div class="prod">
-                            <li>P2</li>
-                            <img src="../img/SVG/Producto 2.svg" alt="Imagen ilustrativa de producto 2">
+                      </div>
+                      <div class="card" style="width: 100%;">
+                        <img src="../img/catalogo2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">Manteles confeccionado con tela tusor y puntilla de algodon teñida con tinte natural proveniente del té y del café.</p>
                         </div>
-                        <div class="prod">
-                            <li>P3</li>
-                            <img src="../img/SVG/producto 3.svg" alt="Imagen ilustrativa de producto 3">
+                      </div>
+                      <div class="card" style="width: 100%;">
+                        <img src="../img/catalogo3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">Mantel confeccionado con tela tusor y puntilla de algodon teñida con tinte natural proveniente del té.</p>
                         </div>
-                        <div class="prod">
-                            <li>P4</li>
-                            <img src="../img/SVG/Producto 4.svg" alt="Imagen ilustrativa de producto 4">
+                      </div>
+                        <div class="card" style="width: 100%;">
+                          <img src="../img/catalogo4.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <p class="card-text">Manteles Materos confeccionados con tela gabardina, estampa artesanal y tinte natural provenientes del té y del café.</p>
+                          </div>
+                      </div>
+                      <div class="card" style="width: 100%;">
+                        <img src="../img/catalogo5.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">Mantel Matero confeccionado con tela gabardina, su estampa es artesanal y su color se debe al teñido natural con Té y Café.</p>
                         </div>
-                        <div class="prod">
-                            <li>P5</li>
-                            <img src="../img/SVG/Producto 5.svg" alt="Imagen ilustrativa de producto 5">
+                      </div>
+                        <div class="card" style="width: 100%;">
+                          <img src="../img/catalogo6.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <p class="card-text">Mantel confeccionado con tela de Gasa de algodón, con detalle en el borde de puntilla de algodon teñida con tinte natural.</p>
+                          </div>
                         </div>
-                        <div class="prod">
-                            <li>P6</li>
-                            <img src="../img/SVG/producto 6.svg" alt="Imagen ilustrativa de producto 6">
+                      
+                      <div class="card" style="width: 100%;">
+                        <img src="../img/catalogo7.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">Camino de mesa, confeccionado con tela de Jean y decorado en su borde con vivo de color rojo, ideal para 2 comenzales.</p>
                         </div>
-                        <div class="prod">
-                            <li>P1</li>
-                            <img src="../img/SVG/Producto 1.svg" alt="Imagen ilustrativa de producto 7">
+                      </div>
+                      <div class="card" style="width: 100%;">
+                        <img src="../img/catalogo8.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">Mantel, camino de mesa y servilleta, de tela tusor, sus bordes deflecados que le dan un estilo informal a la mesa.</p>
                         </div>
-                        <div class="prod">
-                            <li>P2</li>
-                            <img src="../img/SVG/Producto 2.svg" alt="Imagen ilustrativa de producto 8">
+                      </div>
+                      <div class="card" style="width: 100%;">
+                        <img src="../img/catalogo9.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">Manteles confeccionados con fibras naturales, su principal detalle son sus bordes de puntilla teñidas con tinte natural.</p>
                         </div>
-                    </ul>
-            
+                      </div>
+                   
                 </section>
-            
-        </main>
+            </main>
     <!--- Fin Seccion Categorias-->
         <!--Inicio Footer-->
-<footer> 
-    <div class="nav-footer">
-        <h4>Contactanos</h4>
-        <nav class="menu">
-            <ul>
-                <li><a class="a-footer" href="contacto.html">Contacto</a></li> 
-                <li><a class="a-footer" href="https://www.instagram.com/">Instagram</a></li>
-                <li><a class="a-footer" href="mail">mail</a></li>
-                <li><a class="a-footer" href="Whatsapp">Whatsapp</a></li>
-            </ul>
-        </nav>
-    </div>
-</footer>
+        <footer>
+          <section class="seguinos">
+            <h3 class="t-seguinos">SEGUINOS</h3>
+            <div class="social">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-instagram"></i>
+        </div>
+        </section>
+          <section class="contactanos">
+            <h3 class="t-contactanos">CONTACTO</h3>
+            <div class="contacto">
+              <i class="fab fa-whatsapp"></i>
+              <p>011 91111111111</p>
+            </div>
+            <div class="contacto">
+              <i class="far fa-envelope"></i>
+              <p>rustiche@gmail.com</p>
+            </div>
+        
+        </section>
+        </footer>
 <!-- Fin Footer-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
 </body>
 </html>

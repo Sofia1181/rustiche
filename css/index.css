@@ -4,16 +4,16 @@
 ul {
   list-style-type: none; }
 
-a {
+li a {
   text-decoration: none; }
 
 body {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between; }
+  flex-direction: column; }
 
 main {
-  width: 100vw; }
+  width: 100vw;
+  height: auto; }
 
 /*NORMALIZE */
 *,
@@ -25,105 +25,198 @@ main {
 
 html {
   font-size: 62.5%;
-  font-family: 'Poppins', sans-serif; }
+  font-family: 'Open Sans Condensed', sans-serif; }
 
+/*VARIABLES*/
+/* VARIABLES COLORES*/
+/*VARIABLES FUENTES*/
+/*VARIABLES MEDIDAS*/
 /* PARTIALS */
 /* FOOTER */
 footer {
-  max-width: 100vw;
-  max-height: 20vh;
+  width: 100vw;
+  height: 20vh;
   display: flex;
-  flex-flow: column wrap;
   background-color: #262626;
   align-items: center;
   font-family: 'Poppins', sans-serif;
-  padding: 4rem;
-  justify-content: center; }
-
-.nav-footer {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 80%;
+  justify-content: center;
   align-content: center;
-  align-items: center;
-  font-family: 'Poppins', sans-serif; }
-  .nav-footer__titulo {
-    color: whitesmoke;
-    font-stretch: semi-condensed;
-    font-size: 2em; }
-  .nav-footer__menu__lista {
-    display: flex;
-    justify-content: center;
-    gap: 2rem; }
-    .nav-footer__menu__lista__li {
-      color: whitesmoke;
-      font-stretch: semi-condensed;
-      font-size: 1.6em; }
+  border-top: 1px solid #8BD990; }
 
-.nav-footer .menu ul li a {
-  color: whitesmoke;
-  font-stretch: semi-condensed;
-  font-size: 1.6em; }
+footer .seguinos {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+  align-content: space-between; }
+
+footer .seguinos .t-seguinos {
+  color: #F2F2F2;
+  text-align: center;
+  height: 30%; }
+
+footer .seguinos .social {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 2rem; }
+
+footer .seguinos .social .fab {
+  color: #F2F2F2;
+  font-size: 2em; }
 
 /* Fin estilo FOOTER */
-.header-index {
+header {
+  width: 100vw;
   height: 20vh;
-  max-width: 100vw;
-  display: flex;
-  justify-content: center;
-  background: transparent;
-  border: none; }
+  margin: auto; }
 
-header .nav {
-  min-width: 80%;
-  padding: 2rem;
-  margin: auto;
-  display: flex;
-  justify-content: center; }
+header #btn-menu {
+  display: none; }
 
-.nav .menu {
-  display: flex;
-  flex-flow: row wrap;
-  gap: 2rem;
-  align-content: center;
-  justify-content: center;
-  align-items: center; }
-
-.nav .menu > li {
-  background-color: transparent;
-  padding: 1rem; }
-
-.nav .menu > li a {
-  color: whitesmoke;
-  font-weight: lighter;
-  font-stretch: semi-condensed;
-  font-size: 1.6em; }
-
-.nav .menu .submenu > li {
-  color: yellow;
-  position: relative;
-  background-color: tomato;
-  padding: 1rem;
-  margin: 1rem 0; }
-
-.nav .menu .submenu {
+header label {
   display: none;
-  position: absolute; }
+  padding: 2rem;
+  width: 100%;
+  height: 100%; }
 
-.nav .menu > li:hover > .submenu > li {
-  display: block; }
+header .fas:hover {
+  cursor: pointer;
+  color: #8BD990;
+  opacity: 0.5; }
 
-.nav .menu > li:hover .submenu {
-  display: block; }
+header .menu ul {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  gap: 4rem;
+  margin: auto;
+  padding-top: 2rem; }
+
+header .menu ul > li {
+  font-size: 2em;
+  padding: 1rem;
+  border-right: 1px solid #8BD990; }
+
+header .menu ul > li:hover {
+  border-bottom: #8BD990 solid 1px;
+  border-right: none; }
+
+header .menu ul > li a {
+  color: #F2F2F2;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold; }
+
+@media screen and (max-width: 560px) {
+  header label {
+    display: block;
+    background-color: #262626; }
+  .fas {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: #F2F2F2;
+    width: 100%;
+    text-align: center; }
+  header .menu {
+    position: absolute;
+    background-color: #262626;
+    width: 100%; }
+  header .menu ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #262626; }
+  header nav .menu > li {
+    border-right: none; }
+  header nav .menu > li:hover {
+    border-bottom: #8BD990; } }
+
+.header-pages {
+  max-width: 100vw;
+  max-height: 20vh;
+  background-color: #262626;
+  display: flex; }
+  .header-pages__picture {
+    width: 20%;
+    height: auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .header-pages__picture__img {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      align-items: center; }
+  .header-pages__nav {
+    width: 80%;
+    height: auto; }
+    .header-pages__nav__menu {
+      display: flex;
+      gap: 2rem;
+      margin: 4rem auto;
+      justify-content: center;
+      align-content: center;
+      font-size: 2em; }
+      .header-pages__nav__menu__li {
+        padding: 1rem;
+        border-right: 1px solid #8BD990; }
+        .header-pages__nav__menu__li:hover {
+          border-bottom: #F2F2F2 solid 1px;
+          border-right: none; }
+        .header-pages__nav__menu__li a {
+          color: #F2F2F2;
+          font-family: "Poppins", sans-serif;
+          font-weight: bold; }
+          .header-pages__nav__menu__li a:hover {
+            color: #8BD990; }
+  .header-pages #btn-menu {
+    display: none; }
+  .header-pages .header-pages label {
+    display: none;
+    padding: 2rem;
+    max-width: 100%;
+    max-height: 100%; }
+  .header-pages .fas {
+    color: #F2F2F2;
+    display: none; }
+  .header-pages .header-pages .fas:hover {
+    cursor: pointer;
+    color: #8BD990;
+    opacity: 0.5; }
+
+/*RESPONSIVE*/
+@media (max-width: 560px) {
+  header label {
+    display: block;
+    background-color: #262626; }
+  .fas {
+    display: flex;
+    justify-content: center; }
+  header nav .menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #262626; }
+  header nav .menu > li {
+    border-right: none; }
+  header nav .menu > li:hover {
+    border-bottom: #8BD990; } }
 
 /* PAGES */
-/*variables*/
-/*variables*/
+/*Banner*/
 .body-index {
   background-image: url(../img/banner1.jpg);
   background-size: cover;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  margin: auto; }
 
 .banner {
   max-width: 100vw;
@@ -159,54 +252,41 @@ header .nav {
   animation-duration: 5s;
   animation-delay: 2s; }
 
-@keyframes colores {
-  0% {
-    color: #194769; }
-  20% {
-    color: #47EBA8; }
-  40% {
-    color: #FFA936; }
-  60% {
-    color: #F0717E; }
-  80% {
-    color: #D6EB00; }
-  100% {
-    color: #295440; } }
-
 /* Fin banner */
 /* informacion */
 .section-inf {
-  max-width: 100vw;
+  width: 100vh;
   max-height: 80vh;
   display: flex;
-  flex-flow: row wrap;
+  flex-wrap: wrap row;
   justify-content: center;
   align-items: center;
   justify-content: space-around;
-  color: whitesmoke;
-  padding: 4rem; }
+  color: #F2F2F2;
+  padding: 4rem;
+  margin: auto; }
   .section-inf__h2 {
-    font-size: 4em;
-    color: #F2F2F2;
+    font-size: 6em;
     font-weight: lighter;
     font-stretch: semi-condensed; }
   .section-inf__p {
     font-size: 2em;
-    color: #cde7a2;
+    color: #8BD990;
     font-stretch: semi-condensed;
     font-weight: lighter; }
   .section-inf div {
     display: flex;
-    flex-flow: wrap column;
+    flex-direction: column;
     justify-content: center;
     align-content: center;
     align-items: center;
+    text-align: center;
     background-color: #295440;
-    width: 20vw;
-    height: 25vh;
-    filter: alpha(opacity=70);
-    -moz-opacity: .50;
-    opacity: .70; }
+    background-size: cover;
+    width: 50%;
+    height: 50%;
+    padding: 4rem;
+    margin: 0 4rem; }
 
 /* Fin informacion */
 /* categorias */
@@ -218,7 +298,7 @@ header .nav {
   grid-template-rows: 30rem;
   gap: 2rem; }
   .section-cat__item--1 {
-    background-image: url(../img/pattern1.jpg);
+    background-image: url(../img/SVG/producto1.svg);
     background-size: cover;
     background-position-y: center;
     width: 80%;
@@ -229,7 +309,7 @@ header .nav {
     align-items: center;
     font-size: 3em; }
   .section-cat__item--2 {
-    background-image: url(../img/pattern2.jpg);
+    background-image: url(../img/SVG/producto2.svg);
     background-size: cover;
     background-position-y: center;
     width: 80%;
@@ -240,7 +320,7 @@ header .nav {
     align-items: center;
     font-size: 3em; }
   .section-cat__item--3 {
-    background-image: url(../img/pattern3.jpg);
+    background-image: url(../img/SVG/producto3.svg);
     background-size: cover;
     background-position-y: center;
     width: 80%;
@@ -252,289 +332,348 @@ header .nav {
     font-size: 3em; }
   .section-cat__item a {
     color: #F2F2F2;
-    margin: 2rem;
-    background: rgba(0, 0, 0, 0.5);
-    background-size: cover;
-    opacity: 0.4;
-    padding: 2rem; }
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    text-align: center;
+    font-family: "Poiret One", cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
 
 /* Rustiche index */
 .rustiche {
-  width: 80vw;
-  height: 100vh;
+  max-width: 1000vw;
+  height: 80vh;
+  position: relative;
   margin: 2rem auto;
+  border: #262626 solid 2px;
+  text-align: center;
+  background-image: url("../img/rustiche.jpg");
+  background-size: cover;
+  background-position: right;
+  opacity: 0.7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem; }
+
+.rustiche > * {
+  z-index: 100;
+  position: relative; }
+
+.rustiche > p {
+  font-size: 2rem;
+  font-family: "Poiret One", cursive;
+  color: #F2F2F2;
+  padding: 6rem; }
+
+.rustiche::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #262626;
+  opacity: 0.4; }
+
+/* Fin Rustiche index */
+/*RESPONSIVE*/
+@media screen and (max-width: 768px) {
+  .section-inf {
+    width: 50%;
+    height: 50%;
+    justify-content: center;
+    padding: 0; }
+    .section-inf__div {
+      width: 50%;
+      height: 50%; }
+    .section-inf__h2 {
+      font-size: 2rem; } }
+
+.section-cat {
+  width: 100%;
+  height: 50%; }
+  .section-cat__item {
+    width: 80%;
+    height: 50%;
+    font-size: 1em; }
+
+/* Contacto */
+form {
+  width: 80%;
+  height: auto;
+  margin: 2rem auto;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
+  border-radius: 5px;
+  gap: 2rem;
   align-items: center;
-  background-image: url(../img/rustiche.jpg);
-  background-size: cover; }
-  .rustiche__texto {
-    width: 50%;
-    height: 80%;
-    font-family: "Poiret One", cursive;
-    color: #F2F2F2; }
-    .rustiche__texto--titulo {
-      font-size: 6em;
-      text-align: center; }
-    .rustiche__texto--p {
-      font-size: 4em;
-      text-align: center; }
+  color: #F2F2F2;
+  font-size: 2em; }
 
-/* Fin Rustiche index */
-/* Contacto */
-#contacto {
-  width: 100%;
-  height: auto;
-  margin-bottom: 2rem;
-  margin-top: 2rem; }
-
-#contacto .div-ctc {
-  width: 40%;
-  float: left;
-  margin-left: 10rem; }
-
-#contacto .div-ctc .h1-ctc {
+form .titulo-ctc {
+  color: #F2F2F2;
   text-align: center;
-  font-size: 30px;
-  font-weight: lighter;
-  font-family: "Poiret One", cursive; }
+  font-family: "Poppins", sans-serif;
+  font-weight: bold; }
 
-#contacto .div-ctc p {
-  color: #262626;
-  font-size: 1.6em;
-  margin-top: 2rem; }
+input {
+  width: 80%;
+  padding: 2rem; }
 
-#contacto .ctc {
-  width: 40%;
-  max-height: 80%;
+textarea {
+  width: 80%;
+  padding: 2rem;
+  min-height: 100px;
+  max-height: 200px; }
+
+#boton {
+  width: 30%;
   background-color: #295440;
-  display: inline-block; }
-
-#contacto .ctc form {
-  width: 100%;
-  text-align: center;
-  font-size: 2em;
-  padding: 2rem 0;
-  color: whitesmoke;
-  font-weight: lighter; }
+  color: #F2F2F2; }
 
 /* PAG CATALOGO */
-.titulo-catalogo {
+.h1-p {
   text-align: center;
   width: 100vw;
   padding: 2rem;
-  color: tomato;
-  font-weight: bold;
-  background-color: #295440; }
+  color: #8BD990;
+  background-color: #295440;
+  font-weight: lighter;
+  font-family: "Poiret One", cursive; }
 
-.div-cat {
-  width: 80%;
+.cat {
+  width: 80vw;
+  height: 40vh;
   margin: auto;
-  height: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #cde7a2;
-  padding: 1rem;
-  margin-top: 2rem; }
-
-#main-prod .div-cat .h2-cat {
-  padding: 2rem;
-  font-size: 2.5em;
-  color: tomato;
-  font-weight: bold;
-  font-stretch: semi-condensed; }
-
-#main-prod .div-cat > ul {
-  max-width: 100%;
-  height: auto;
-  display: grid;
-  grid-column: 1 / 5;
   justify-content: center;
   align-content: center;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 15rem;
-  gap: 2rem; }
-
-#main-prod .div-cat > ul .cat {
-  font-size: 1.6em;
-  font-family: 'Poppins', sans-serif;
-  font-variant: small-caps;
-  font-weight: bold;
-  text-align: center;
-  width: 100%; }
-
-#main-prod .div-cat > ul .cat img {
-  width: auto; }
-
-#main-prod .div-cat > ul .cat li a {
-  color: tomato; }
+  align-items: center;
+  gap: 4rem;
+  background-color: #262626; }
+  .cat__img {
+    text-align: center;
+    width: 20%;
+    height: 80%;
+    background-image: url(../img/SVG/Hoja-BG-VO.svg);
+    background-size: cover;
+    padding: 2rem; }
+  .cat a {
+    color: #F2F2F2;
+    text-decoration: none;
+    font-size: 2em;
+    font-family: "Poiret One", cursive; }
+    .cat a:hover {
+      color: #8BD990; }
 
 .productos {
-  width: 100%;
-  margin: auto;
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #262626;
-  padding: 1rem;
-  margin-top: 2rem;
-  padding: 2rem;
-  justify-content: center;
-  font-size: 1.6em;
-  color: whitesmoke;
-  font-weight: lighter; }
-
-#main-prod .productos .h1-prod {
-  padding: 2rem;
-  font-size: 1.6em;
-  color: whitesmoke;
-  font-weight: lighter;
-  font-stretch: semi-condensed; }
-
-#main-prod .productos > ul {
-  max-width: 100%;
-  min-height: 100%;
+  margin: 4rem auto;
+  width: 80vw;
   display: grid;
-  grid-column: 1 / 5;
-  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 6rem;
   align-content: center;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 15rem 15 rem;
-  gap: 2rem;
+  justify-content: center;
   align-items: center; }
 
-#main-prod .productos > ul .prod {
-  font-size: 1.6em;
-  font-family: 'Poppins', sans-serif;
-  font-weight: lighter;
+.card {
+  align-items: center;
   text-align: center;
-  width: 100%; }
+  transition-duration: 0.5s; }
 
-#main-prod .productos > ul .prod img {
-  width: 50%; }
+.card:hover {
+  transform: scale(1.1); }
+
+.card-body {
+  background-color: #295440; }
+
+.card-body .card-text {
+  color: #F2F2F2;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px; }
 
 /* SOBRE RUSTICHE */
-.main-sr {
+.rus-inf {
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  background-color: #262626; }
-
-.rustiche-1 {
-  width: 80vw;
-  height: 80vh;
-  display: flex;
-  flex-flow: row wrap;
   justify-content: center;
   align-content: center;
-  gap: 2rem; }
-
-.rustiche-1 .foto {
-  width: 30%;
-  height: 50%;
-  display: flex;
-  justify-content: center;
-  padding: 2rem;
-  background-image: url(../img/banner1.jpg);
-  border-radius: 2rem;
+  gap: 2rem;
+  background-color: #262626;
+  margin: auto;
   align-items: center; }
-
-.rustiche-1 .foto img {
-  width: 50%;
-  max-height: 50%; }
-
-.rustiche-1 .texto {
-  max-width: 60%;
-  max-height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: whitesmoke;
-  font-size: 2em;
-  font-family: 'Poiret One', cursive; }
-
-.rustiche-1 .texto h1 {
-  font-weight: lighter;
-  font-family: 'Poiret One', cursive; }
+  .rus-inf__foto {
+    width: 80%;
+    height: 50%;
+    background-image: url(../img/rustiche.jpg);
+    background-size: cover;
+    background-position: left;
+    background-position-y: center;
+    background-attachment: fixed; }
+  .rus-inf__texto {
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #F2F2F2;
+    font-family: "Poiret One", cursive; }
+    .rus-inf__texto__h1-rus {
+      width: 100vw;
+      font-size: 4em;
+      text-align: center; }
+    .rus-inf__texto__p-rus {
+      text-align: center;
+      font-size: 2rem; }
 
 /* FIN RUSTICHE */
 /* TINTES & TELAS */
 .tyt {
-  width: 100vw;
-  height: 50vh;
+  width: 80vw;
+  height: 80vh;
   display: flex;
+  flex-wrap: wrap row;
   justify-content: center;
   align-items: center;
-  justify-content: space-around;
-  font-size: 1.6em; }
-
-.tyt .tintes-1 {
-  width: 50vw;
-  height: 50vh;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
   align-content: center;
-  align-items: center;
-  justify-content: center;
-  color: #295440;
-  padding: 2rem; }
-
-.tyt .tintes-1 > h1 {
-  font-size: 2em;
-  font-weight: lighter;
-  font-stretch: semi-condensed; }
-
-.tyt .img-tyt {
-  width: 30vw;
-  height: 50vh;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.tyt .img-tyt img {
-  width: 80%;
-  height: 80%; }
-
-.telas-1 {
-  width: 100vw;
-  height: 50vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
-  font-size: 1.6em; }
-
-.telas-1 .tintes-1 {
-  width: 50vw;
-  height: 50vh;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-  color: #295440;
-  padding: 2rem; }
-
-.telas-1 .tintes-1 > h2 {
-  font-size: 2em;
-  font-weight: lighter;
-  font-stretch: semi-condensed; }
-
-.telas-1 .img-tyt2 {
-  width: 30vw;
-  height: 50vh;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.telas-1 .img-tyt2 img {
-  width: 50%;
-  height: 80%; }
+  margin: 2rem auto; }
+  .tyt__texto {
+    width: 50%;
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+    background-color: #262626;
+    color: #F2F2F2;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .tyt__texto__titulo-tintes {
+      font-size: 2em;
+      width: 100%;
+      font-weight: bold; }
+    .tyt__texto__p-tintes {
+      padding: 0 2rem;
+      font-size: 1.5em; }
+  .tyt__img1 {
+    width: 50%;
+    height: 100%;
+    background-image: url(../img/tintes.jpg);
+    background-size: cover;
+    margin: 2rem; }
+    .tyt__img1__imagen {
+      width: 100%;
+      height: 100%; }
+  .tyt__img2 {
+    width: 50%;
+    height: 100%;
+    background-image: url(../img/TELAS.jpg);
+    background-size: cover;
+    margin: 2rem; }
+    .tyt__img2__imagen {
+      width: 100%;
+      height: 100%; }
 
 /* FIN TINTES & TELAS */
+/*RESPONSIVE*/
+@media screen and (max-width: 992px) {
+  .tyt__texto__p-tintes {
+    font-size: 1em; } }
+
+@media screen and (max-width: 576px) {
+  .tyt {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh; }
+    .tyt__img1 {
+      width: 50%;
+      height: 100%; }
+    .tyt__img2 {
+      width: 50%;
+      height: 100%; } }
+
+/* FIN TINTES & TELAS */
+/* RESPONSIVE */
+@media screen and (max-width: 780px) {
+  #container-banner {
+    max-height: 50vh; }
+  #container-banner .banner .h1-banner {
+    font-size: 8em; }
+  #container-banner .banner .h2-banner {
+    font-size: 4em; } }
+
+@media screen and (max-width: 480px) {
+  #container-banner {
+    max-height: 25vh; }
+  #container-banner .banner .h1-banner {
+    font-size: 6em; }
+  #container-banner .banner .h2-banner {
+    font-size: 1em; } }
+
+@media screen and (max-width: 780px) {
+  #container-inf {
+    max-height: 30vh;
+    padding: 4rem 0; }
+  #container-inf .telas {
+    max-width: 25vw;
+    max-height: 20vh; }
+  #container-inf .tintes {
+    width: 25vw;
+    height: 20vh; }
+  #container-inf .estampa {
+    max-width: 25vw;
+    max-height: 20vh; }
+  #container-inf .h2-inf {
+    font-size: 2em; }
+  #container-inf .p-inf {
+    font-size: 1.5em;
+    justify-content: center; } }
+
+@media screen and (max-width: 480px) {
+  #container-inf .h2-inf {
+    font-size: 1.5em; }
+  #container-inf .p-inf {
+    font-size: 1em; } }
+
+@media screen and (max-width: 480px) {
+  #cat-index {
+    max-width: 100%;
+    max-height: 100%; } }
+
+@media screen and (max-width: 480px) {
+  #cat-index .prod-cat {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    align-content: center; } }
+
+@media screen and (max-width: 480px) {
+  #cat-index .cat-titulo {
+    font-size: 2em; } }
+
+@media screen and (max-width: 480px) {
+  #cat-index .prod-cat > li {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 25%;
+    font-family: 'Poppins', sans-serif; } }
