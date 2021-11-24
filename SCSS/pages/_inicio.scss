@@ -53,168 +53,215 @@ animation-delay: 2s;
 
 /* informacion */
 .section-inf {
-    width: 100vh;
-    max-height: 80vh;
+    width: 80vw;
+    height: 40vh;
     display: flex;
-    flex-wrap: wrap row;
     justify-content: center;
+    align-content: center;
     align-items: center;
-    justify-content: space-around;
-    color: $blanco;
-    padding: 4rem;
-    margin: auto;
-    
-
-    &__h2 {
-        font-size: 6em;
-        font-weight: lighter;
-        font-stretch: semi-condensed;  
-    }
-    &__p {
-    font-size: $fs-sm;
-    color: $verde-m; 
-    font-stretch: semi-condensed;
-    font-weight: lighter;
-    }
-    
-    @each $inf in div { 
-           #{$inf} {
-            display: flex;    
-            flex-direction: column;
-            justify-content: center;   
-            align-content: center;
-            align-items: center; 
-            text-align: center;
-            background-color: $verde;
-            background-size: cover;
-            width: 50%;
-            height: 50%;
-            padding: $md;
-            margin: 0 $md;
-            
-              }
-           }
-        }
+    gap: 4rem;
+    margin: 2rem auto; 
+    &__div {
+      background-color: #295440;
+      width: 40%;
+      height: 80%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      border-radius: 4px; 
+      color: $blanco;
+      &__h2 {
+      color: tomato;
+      font-size: 3rem; }
+     &__p {
+      font-size: $fs-sm;
+      padding: 1rem; } }}
 
         /* Fin informacion */
 
 /* categorias */
 .section-cat {
-    max-width: 100vw;
+    width: 80vw;
+    height: 30vh;
     display: grid;
-    margin: auto;
+    margin: 4rem auto 6rem auto;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 30rem;
-    gap: 2rem;
-    
-   
+    gap: 4rem;
+    justify-content: center;
+    align-items: center; 
     &__item {
-        @for $i from 1 through 3 {
-            &--#{$i} {
-                background-image: url(../img/SVG/producto#{$i}.svg);
-                background-size: cover;
-                background-position-y: center;
-                width: 80%;
-                height: 80%;
-                margin: auto; 
-                display: flex;
-                justify-content: center;   
-                align-items: center; 
-                font-size: 3em;
-                }  
-            }
-     a {
-        color: $blanco;
-        background: rgba(0, 0, 0, 0.4);
-        width: 100%;
-        height: 100%;
-        padding: $sm;
-        text-align: center;
-        font-family: $poiret;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+      background-image: url(../img/SVG/hojaverde2.svg);
+      background-size: cover;
+      background-position: bottom;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      padding: 0 0 0 4rem;
+      border-radius: 4px;
+      transition-duration: 0.5s; 
+      &__a {
+        font-size: 3em;
+        color: #295440;
+        text-decoration: none;}
+        &__a:hover {
+        color: tomato; 
+      }}
+      &__item:hover {
+      transform: scale(1.1); }
+      
 
-    }
-}
 }
 
 /* Rustiche index */
 .rustiche {
-    max-width: 1000vw;
-    height: 80vh;
-    position: relative;
-    margin: $sm auto;
-    border: $dark solid 2px;
-    text-align: center;
-    background-image: url('../img/rustiche.jpg');
-    background-size: cover;  
-    background-position: right;
-    opacity: 0.7;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: $lg;
-    
-     }
-     .rustiche > * {
-    z-index: 100;
-    position: relative;
-    
-    }
-   
-    .rustiche > p {
-        font-size: $sm;
-        font-family: $poiret;
-        color: $blanco;
-        padding: $lg;
-
-    }
-
-.rustiche::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 80vw;
+  height: 80vh;
+  margin: 4rem auto;
+  gap: 2rem; 
+  &__texto {
+    color: #F2F2F2;
+    font-size: $fs-sm;
+    font-family: "Poiret One", cursive;
+    background-color: #262626;
+    width: 50%;
     height: 100%;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: $dark;  
-    opacity: 0.4;
-
-      
-}
+    text-align: center;
+    display: flex;
+    align-items: center;
+    border-radius: 8px; 
+    &__p {
+      padding: $md; } }
+   &__img {
+    background-image: url(../img/rustiche.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 100%;
+    border: none;
+    border-radius: 4px; }
+   }
 
 /* Fin Rustiche index */
+
 /*RESPONSIVE*/
 @media screen and (max-width: 768px) {
-    .section-inf {
-        width: 50%;
-        height: 50%;
-        justify-content: center;
-        padding: 0;
-
-        &__div {
-            width: 50%;
-            height: 50%;
-        }
-            &__h2 {
-                font-size: $sm;
-            }
-           
-    }
+.section-inf {
+  margin: 0 auto;
+  
+  &__div {
+    height: 60%;
+    justify-content: center;
+    
+  }
 }
 .section-cat {
-    width: 100%;
-    height: 50%;
-    
-    &__item {
-        width: 80%;
-        height: 50%;
-        font-size: 1em;
+  margin: $sm auto;
+  &__item {
+    height: 80%;
+    &__a {
+      font-size: $sm;
     }
+  }
 }
+}
+@media screen and (max-width: 576px) {
+  .section-inf {
+    margin: 0 auto;
+    width: 100%;
+    
+    &__div {
+      height: 60%;
+      justify-content: center;
+      
+    }
+  }
+  .section-cat {
+    margin: $sm auto;
+    width: 100%;
+    gap: $sm;
+    &__item {
+      height: 80%;
+      &__a {
+        font-size: $sm;
+        text-align: center;
+      }
+    }
+  }
+  .rustiche {
+    width: 90vw;
+    height: 50vh;
+    margin: auto;
+  }
+  }
+  @media screen and (max-width: 360px) {
+    .banner {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      &__titulo {
+        font-size: 8em;
+      }
+      &__h2 {
+        font-size: 4em;
+        text-align: center;
+      }
+    }
+    .section-inf {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 80vw;
+      height: auto;
+      &__div {
+        width: 80vw;
+        height: 30vh;
+      }
+    }
+    .section-cat {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 80vw;
+      height: auto;
+      &__item {
+        width: 80vw;
+        height: 20vh;
+        &__a {
+          font-size: 3em;
+        }
+      }
+    }
+    .rustiche {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 80vw;
+      height: auto;
+      &__texto {
+        width: 80vw;
+        height: 50vh;
+        font-size: $fs-sm;
+      }
+      &__img {
+        width: 80vw;
+        height: 30vh;
+      }
+    }
+  }
+
+
 
 

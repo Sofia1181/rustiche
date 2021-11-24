@@ -20,6 +20,7 @@
         background-position: left;
         background-position-y: center;
         background-attachment: fixed;
+        margin-top: $sm;
     }
     &__texto {
         width: 50%;
@@ -48,3 +49,22 @@
 }
 
 /* FIN RUSTICHE */
+/* RESPONSIVE*/
+@media screen and (max-width: 560px) {
+    .rus-inf__foto {
+      background-position: right;
+      background-size: cover;
+      background-repeat: no-repeat; }
+    .rus-inf__texto {
+      width: 80%;
+      margin: 0 auto; } }
+  
+  @media screen and (max-width: 360px) {
+    .rus-inf__foto {
+      height: 50%;
+      background-position: center;
+      background-size: contain;
+      background-position-y: top;
+      background-attachment: local;
+      font-size: 1em;
+     } }

@@ -63,28 +63,28 @@
 /* FIN TINTES & TELAS */
 /*RESPONSIVE*/
 @media screen and (max-width: 992px) {
-    .tyt  {
+    .tyt {
+        height: 50vh;
         &__texto {
-    &__p-tintes {
-        font-size: 1em;
+            width: 80%;
+            
+        }
     }
-}
-
-}   
-}
-@media screen and (max-width: 576px) {
-   .tyt {
-       display: flex;
-       flex-direction: column;
-       width: 100vw;
-       height: 100vh;
-       &__img1 {
-        width: 50%;
-        height: 100%;
-    }
-    &__img2 {
-        width: 50%;
-        height: 100%;
-    }
-   }
-}
+    .tyt__texto__p-tintes {
+      font-size: 1em; } }
+  
+  @media screen and (max-width: 576px) {
+    .tyt {
+      display: flex;
+      flex-direction: column;
+      width: 100vw;
+      height: 100vh;
+      padding: $sm;
+     }
+      .tyt__img1 {
+        width: 80%;
+        height: 100%; }
+      .tyt__img2 {
+        width: 80%;
+        height: 100%; } }
+       
